@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61D7B52E1C2DA2970091D71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7B52D1C2DA2970091D71C /* AppDelegate.swift */; };
+		61D7B5301C2DA2970091D71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7B52F1C2DA2970091D71C /* ViewController.swift */; };
+		61D7B5331C2DA2970091D71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D7B5311C2DA2970091D71C /* Main.storyboard */; };
+		61D7B5351C2DA2970091D71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D7B5341C2DA2970091D71C /* Assets.xcassets */; };
+		61D7B5381C2DA2970091D71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D7B5361C2DA2970091D71C /* LaunchScreen.storyboard */; };
+		61D7B5431C2DA2970091D71C /* WATParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7B5421C2DA2970091D71C /* WATParkingTests.swift */; };
+		61D7B54E1C2DA2970091D71C /* WATParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7B54D1C2DA2970091D71C /* WATParkingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61D7B53F1C2DA2970091D71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D7B5221C2DA2970091D71C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D7B5291C2DA2970091D71C;
+			remoteInfo = WATParking;
+		};
+		61D7B54A1C2DA2970091D71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D7B5221C2DA2970091D71C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D7B5291C2DA2970091D71C;
+			remoteInfo = WATParking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61D7B52A1C2DA2970091D71C /* WATParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WATParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D7B52D1C2DA2970091D71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61D7B52F1C2DA2970091D71C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61D7B5321C2DA2970091D71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61D7B5341C2DA2970091D71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61D7B5371C2DA2970091D71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61D7B5391C2DA2970091D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D7B53E1C2DA2970091D71C /* WATParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WATParkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D7B5421C2DA2970091D71C /* WATParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WATParkingTests.swift; sourceTree = "<group>"; };
+		61D7B5441C2DA2970091D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D7B5491C2DA2970091D71C /* WATParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WATParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D7B54D1C2DA2970091D71C /* WATParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WATParkingUITests.swift; sourceTree = "<group>"; };
+		61D7B54F1C2DA2970091D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61D7B5271C2DA2970091D71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D7B53B1C2DA2970091D71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D7B5461C2DA2970091D71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61D7B5211C2DA2970091D71C = {
+			isa = PBXGroup;
+			children = (
+				61D7B52C1C2DA2970091D71C /* WATParking */,
+				61D7B5411C2DA2970091D71C /* WATParkingTests */,
+				61D7B54C1C2DA2970091D71C /* WATParkingUITests */,
+				61D7B52B1C2DA2970091D71C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61D7B52B1C2DA2970091D71C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61D7B52A1C2DA2970091D71C /* WATParking.app */,
+				61D7B53E1C2DA2970091D71C /* WATParkingTests.xctest */,
+				61D7B5491C2DA2970091D71C /* WATParkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61D7B52C1C2DA2970091D71C /* WATParking */ = {
+			isa = PBXGroup;
+			children = (
+				61D7B52D1C2DA2970091D71C /* AppDelegate.swift */,
+				61D7B52F1C2DA2970091D71C /* ViewController.swift */,
+				61D7B5311C2DA2970091D71C /* Main.storyboard */,
+				61D7B5341C2DA2970091D71C /* Assets.xcassets */,
+				61D7B5361C2DA2970091D71C /* LaunchScreen.storyboard */,
+				61D7B5391C2DA2970091D71C /* Info.plist */,
+			);
+			path = WATParking;
+			sourceTree = "<group>";
+		};
+		61D7B5411C2DA2970091D71C /* WATParkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				61D7B5421C2DA2970091D71C /* WATParkingTests.swift */,
+				61D7B5441C2DA2970091D71C /* Info.plist */,
+			);
+			path = WATParkingTests;
+			sourceTree = "<group>";
+		};
+		61D7B54C1C2DA2970091D71C /* WATParkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61D7B54D1C2DA2970091D71C /* WATParkingUITests.swift */,
+				61D7B54F1C2DA2970091D71C /* Info.plist */,
+			);
+			path = WATParkingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61D7B5291C2DA2970091D71C /* WATParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D7B5521C2DA2970091D71C /* Build configuration list for PBXNativeTarget "WATParking" */;
+			buildPhases = (
+				61D7B5261C2DA2970091D71C /* Sources */,
+				61D7B5271C2DA2970091D71C /* Frameworks */,
+				61D7B5281C2DA2970091D71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WATParking;
+			productName = WATParking;
+			productReference = 61D7B52A1C2DA2970091D71C /* WATParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61D7B53D1C2DA2970091D71C /* WATParkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D7B5551C2DA2970091D71C /* Build configuration list for PBXNativeTarget "WATParkingTests" */;
+			buildPhases = (
+				61D7B53A1C2DA2970091D71C /* Sources */,
+				61D7B53B1C2DA2970091D71C /* Frameworks */,
+				61D7B53C1C2DA2970091D71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61D7B5401C2DA2970091D71C /* PBXTargetDependency */,
+			);
+			name = WATParkingTests;
+			productName = WATParkingTests;
+			productReference = 61D7B53E1C2DA2970091D71C /* WATParkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61D7B5481C2DA2970091D71C /* WATParkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D7B5581C2DA2970091D71C /* Build configuration list for PBXNativeTarget "WATParkingUITests" */;
+			buildPhases = (
+				61D7B5451C2DA2970091D71C /* Sources */,
+				61D7B5461C2DA2970091D71C /* Frameworks */,
+				61D7B5471C2DA2970091D71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61D7B54B1C2DA2970091D71C /* PBXTargetDependency */,
+			);
+			name = WATParkingUITests;
+			productName = WATParkingUITests;
+			productReference = 61D7B5491C2DA2970091D71C /* WATParkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61D7B5221C2DA2970091D71C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = YTL;
+				TargetAttributes = {
+					61D7B5291C2DA2970091D71C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					61D7B53D1C2DA2970091D71C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 61D7B5291C2DA2970091D71C;
+					};
+					61D7B5481C2DA2970091D71C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 61D7B5291C2DA2970091D71C;
+					};
+				};
+			};
+			buildConfigurationList = 61D7B5251C2DA2970091D71C /* Build configuration list for PBXProject "WATParking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61D7B5211C2DA2970091D71C;
+			productRefGroup = 61D7B52B1C2DA2970091D71C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61D7B5291C2DA2970091D71C /* WATParking */,
+				61D7B53D1C2DA2970091D71C /* WATParkingTests */,
+				61D7B5481C2DA2970091D71C /* WATParkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61D7B5281C2DA2970091D71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D7B5381C2DA2970091D71C /* LaunchScreen.storyboard in Resources */,
+				61D7B5351C2DA2970091D71C /* Assets.xcassets in Resources */,
+				61D7B5331C2DA2970091D71C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D7B53C1C2DA2970091D71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D7B5471C2DA2970091D71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61D7B5261C2DA2970091D71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D7B5301C2DA2970091D71C /* ViewController.swift in Sources */,
+				61D7B52E1C2DA2970091D71C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D7B53A1C2DA2970091D71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D7B5431C2DA2970091D71C /* WATParkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D7B5451C2DA2970091D71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D7B54E1C2DA2970091D71C /* WATParkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61D7B5401C2DA2970091D71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61D7B5291C2DA2970091D71C /* WATParking */;
+			targetProxy = 61D7B53F1C2DA2970091D71C /* PBXContainerItemProxy */;
+		};
+		61D7B54B1C2DA2970091D71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61D7B5291C2DA2970091D71C /* WATParking */;
+			targetProxy = 61D7B54A1C2DA2970091D71C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61D7B5311C2DA2970091D71C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61D7B5321C2DA2970091D71C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61D7B5361C2DA2970091D71C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61D7B5371C2DA2970091D71C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61D7B5501C2DA2970091D71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61D7B5511C2DA2970091D71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61D7B5531C2DA2970091D71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WATParking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ytl.WATParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61D7B5541C2DA2970091D71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WATParking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ytl.WATParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61D7B5561C2DA2970091D71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WATParkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ytl.WATParkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WATParking.app/WATParking";
+			};
+			name = Debug;
+		};
+		61D7B5571C2DA2970091D71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WATParkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ytl.WATParkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WATParking.app/WATParking";
+			};
+			name = Release;
+		};
+		61D7B5591C2DA2970091D71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WATParkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ytl.WATParkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WATParking;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		61D7B55A1C2DA2970091D71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WATParkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ytl.WATParkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WATParking;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61D7B5251C2DA2970091D71C /* Build configuration list for PBXProject "WATParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D7B5501C2DA2970091D71C /* Debug */,
+				61D7B5511C2DA2970091D71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D7B5521C2DA2970091D71C /* Build configuration list for PBXNativeTarget "WATParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D7B5531C2DA2970091D71C /* Debug */,
+				61D7B5541C2DA2970091D71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61D7B5551C2DA2970091D71C /* Build configuration list for PBXNativeTarget "WATParkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D7B5561C2DA2970091D71C /* Debug */,
+				61D7B5571C2DA2970091D71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61D7B5581C2DA2970091D71C /* Build configuration list for PBXNativeTarget "WATParkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D7B5591C2DA2970091D71C /* Debug */,
+				61D7B55A1C2DA2970091D71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61D7B5221C2DA2970091D71C /* Project object */;
+}
