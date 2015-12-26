@@ -14,19 +14,19 @@ extension ViewController: MKMapViewDelegate {
         if let annotation = annotation as? ParkingLot {
             let identifier = "pin"
             var view: MKPinAnnotationView
-            if let dequeuedView = map.dequeueReusableAnnotationViewWithIdentifier(identifier)
-                as? MKPinAnnotationView { // 2
-                    dequeuedView.annotation = annotation
-                    view = dequeuedView
-            } else {
-                // 3
-                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                view.canShowCallout = true
-                view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.rightCalloutAccessoryView = UIButton() as UIView
-            }
+            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.rightCalloutAccessoryView = UIButton(type: UIButtonType.InfoLight) as UIView
             return view
         }
         return nil
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+        calloutAccessoryControlTapped control: UIControl) {
+            let location = view.annotation as! ParkingLot
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+            location.mapItem().openInMapsWithLaunchOptions(launchOptions)
     }
 }

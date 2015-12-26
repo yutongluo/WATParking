@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         
         let dataManager : DataManager = DataManager()
         
+        self.map.delegate = self
+        
         dataManager.loadDataFromURL { (data, err) -> Void in
             if let parkingData = data {
                 if let parkingLots = parkingData.valueForKey("data") as? NSArray {
@@ -47,16 +49,15 @@ class ViewController: UIViewController {
                             let coordinate = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
                             
                             self.parkingLotDict[lot_name] = ParkingLot(lot_name: lot_name, capacity: capacity!, current_count: current_count!, percent_filled: percent_filled, coordinate: coordinate, last_updated: last_updated)
+                            
+                            dispatch_async(dispatch_get_main_queue(),{
+                                for key in self.parkingLotDict {
+                                    self.map.addAnnotation(key.1)
+                                }
+                            })
+                            
                         }
                     }
-
-                    self.map.delegate = self
-                    
-                    for key in self.parkingLotDict {
-                        print(key.1.title);
-                        self.map.addAnnotation(key.1)
-                    }
-                    
                 }
             }
         }

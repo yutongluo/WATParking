@@ -8,6 +8,7 @@
 
 import Foundation
 import MapKit
+import Contacts
 
 class ParkingLot : NSObject, MKAnnotation {
     let lot_name : String
@@ -37,15 +38,27 @@ class ParkingLot : NSObject, MKAnnotation {
         self.last_updated = last_updated
     }
     
+    // annotation callout info button opens this mapItem in Maps app
+    func mapItem() -> MKMapItem {
+        let addressDictionary = [String(CNPostalAddressStreetKey): ""]
+        let placemark = MKPlacemark(coordinate: self.coordinate, addressDictionary: addressDictionary)
+        
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title
+        
+        return mapItem
+    }
+    
     var title : String? {
-        if let percent = percent_filled {
-            return "Lot " + lot_name + ": " + String(percent) + "% Filled with " + String(self.spots_left) + " Spots Left."
-        } else {
-            return "Lot " + lot_name + ": " + String(self.spots_left) + " Spots Left."
-        }
+        return "Lot " + lot_name
+        
     }
     
     var subtitle : String? {
-        return String(current_count) + "/" + String(capacity) + " Last updated:" + String(self.last_updated!)
+        if let percent = percent_filled {
+            return String(percent) + "% Filled; " + String(self.spots_left) + " Spots Left."
+        } else {
+            return String(self.spots_left) + " Spots Left."
+        }
     }
 }

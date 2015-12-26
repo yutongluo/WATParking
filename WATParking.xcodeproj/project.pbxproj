@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612308571C2F286A0066EE96 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 612308561C2F286A0066EE96 /* default.gpx */; };
 		61B1727C1C2DADE6002513AB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1727B1C2DADE6002513AB /* DataManager.swift */; };
 		61B1727E1C2DB024002513AB /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B1727D1C2DB024002513AB /* keys.plist */; };
 		61D5AB1E1C2F112900DC5015 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D5AB1D1C2F112900DC5015 /* VCMapView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		612308561C2F286A0066EE96 /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
 		61B1727B1C2DADE6002513AB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		61B1727D1C2DB024002513AB /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		61D5AB1D1C2F112900DC5015 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		61D7B5211C2DA2970091D71C = {
 			isa = PBXGroup;
 			children = (
+				612308561C2F286A0066EE96 /* default.gpx */,
 				61D7B52C1C2DA2970091D71C /* WATParking */,
 				61D7B5411C2DA2970091D71C /* WATParkingTests */,
 				61D7B54C1C2DA2970091D71C /* WATParkingUITests */,
@@ -106,12 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				61D7B52D1C2DA2970091D71C /* AppDelegate.swift */,
+				61B1727B1C2DADE6002513AB /* DataManager.swift */,
 				61D7B5311C2DA2970091D71C /* Main.storyboard */,
 				61D7B5341C2DA2970091D71C /* Assets.xcassets */,
 				61D7B5361C2DA2970091D71C /* LaunchScreen.storyboard */,
 				61D7B5391C2DA2970091D71C /* Info.plist */,
 				61D7B55B1C2DA5950091D71C /* ParkingLot.swift */,
-				61B1727B1C2DADE6002513AB /* DataManager.swift */,
 				61D7B52F1C2DA2970091D71C /* ViewController.swift */,
 				61D5AB1D1C2F112900DC5015 /* VCMapView.swift */,
 				61B1727D1C2DB024002513AB /* keys.plist */,
@@ -246,6 +249,7 @@
 				61D7B5381C2DA2970091D71C /* LaunchScreen.storyboard in Resources */,
 				61D7B5351C2DA2970091D71C /* Assets.xcassets in Resources */,
 				61D7B5331C2DA2970091D71C /* Main.storyboard in Resources */,
+				612308571C2F286A0066EE96 /* default.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
