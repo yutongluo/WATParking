@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-            regionRadius * 2.5, regionRadius * 2.5)
+            regionRadius * 2, regionRadius * 2)
         map.setRegion(coordinateRegion, animated: true)
     }
 

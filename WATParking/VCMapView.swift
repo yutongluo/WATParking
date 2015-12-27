@@ -16,8 +16,27 @@ extension ViewController: MKMapViewDelegate {
             var view: MKPinAnnotationView
             view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
             view.rightCalloutAccessoryView = UIButton(type: UIButtonType.InfoLight) as UIView
+            
+            let percent = annotation.percent_filled ?? annotation.current_count / annotation.capacity
+            
+            switch percent {
+            case 0..<50:
+                view.pinTintColor = UIColor.greenColor()
+                break
+            case 51..<80:
+                view.pinTintColor = UIColor.yellowColor()
+                break
+            case 81..<90:
+                view.pinTintColor = UIColor.orangeColor()
+                break
+            default:
+                view.pinTintColor = UIColor.redColor()
+            }
+            if annotation.percent_filled > 95 {
+                view.pinTintColor = UIColor.redColor()
+            }
+            
             return view
         }
         return nil
