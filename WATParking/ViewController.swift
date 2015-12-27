@@ -59,10 +59,8 @@ class ViewController: UIViewController {
                                             self.map.addAnnotation(key.1)
                                         }
                                     })
-
                                 }
                             }
-                            
                         }
                     }
                 }

@@ -24,10 +24,10 @@ extension ViewController: MKMapViewDelegate {
                 case 0..<50:
                     view.pinTintColor = UIColor.greenColor()
                     break
-                case 51..<80:
+                case 50..<80:
                     view.pinTintColor = UIColor.yellowColor()
                     break
-                case 81..<90:
+                case 80..<90:
                     view.pinTintColor = UIColor.orangeColor()
                     break
                 default:
