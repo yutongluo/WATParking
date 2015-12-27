@@ -11,18 +11,13 @@ import UIKit
 
 class ParkingLotTableViewCell : UITableViewCell{
     @IBOutlet weak var lotNameLabel: UILabel!
-    @IBOutlet weak var percentFilledLabel: UILabel!
-    @IBOutlet weak var availableSpotsLabel: UILabel!
-    @IBOutlet weak var updatedLabel: UILabel!
+    
+    @IBOutlet var percentLabel: UILabel!
+    @IBOutlet var spotsLeftLabel: UILabel!
+    @IBOutlet var updatedLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
     }
-    
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
 }

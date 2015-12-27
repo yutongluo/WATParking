@@ -40,13 +40,18 @@ class DataManager {
         // Use NSURLSession to get data from an NSURL
         let loadDataTask = session.dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
             do {
+                if (data == nil) {
+                    throw NSError(domain: "Network Failure", code: 1, userInfo: nil)
+                }
                 // Parse and return deserialized JSON
                 let jsonData = try NSJSONSerialization.JSONObjectWithData(data!,options: .MutableContainers) as! NSDictionary
                 completion(data: jsonData, error: nil)
-            } catch {
-                // handle error
+            } catch let err as NSError {
+                print(err)
+                completion(data: nil, error: err)
             }
         })
+        
         loadDataTask.resume()
     }
 }
