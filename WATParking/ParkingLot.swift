@@ -56,7 +56,6 @@ class ParkingLot : NSObject, MKAnnotation {
     
     var title : String? {
         return "Lot " + lot_name
-        
     }
     
     var subtitle : String? {

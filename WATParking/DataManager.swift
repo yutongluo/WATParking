@@ -47,7 +47,6 @@ class DataManager {
                 // handle error
             }
         })
-        
         loadDataTask.resume()
     }
 }

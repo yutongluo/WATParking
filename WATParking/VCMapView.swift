@@ -17,6 +17,7 @@ extension ViewController: MKMapViewDelegate {
             view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
             view.rightCalloutAccessoryView = UIButton(type: UIButtonType.InfoLight) as UIView
+            view.image = UIImage(named: "ParkingLogo")
             
             if (annotation.current_count != nil && annotation.capacity != nil) {
                 let percent = annotation.percent_filled ?? annotation.current_count! / annotation.capacity!
