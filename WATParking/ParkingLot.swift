@@ -12,14 +12,14 @@ import Contacts
 
 class ParkingLot : NSObject, MKAnnotation {
     let lot_name : String
-    let capacity : Int
-    var current_count : Int
+    let capacity : Int?
+    var current_count : Int?
     var last_updated : NSDate?
     var percent_filled : Int?
-    var spots_left : Int
+    var spots_left : Int?
     let coordinate: CLLocationCoordinate2D
     
-    init(lot_name : String, capacity : Int, current_count : Int, percent_filled : Int?, coordinate: CLLocationCoordinate2D, last_updated : NSDate?) {
+    init(lot_name : String, capacity : Int?, current_count : Int?, percent_filled : Int?, coordinate: CLLocationCoordinate2D, last_updated : NSDate?) {
         self.lot_name = lot_name
         self.capacity = capacity
         self.current_count = current_count
@@ -27,8 +27,14 @@ class ParkingLot : NSObject, MKAnnotation {
         self.coordinate = coordinate
         self.last_updated = last_updated
         
-        self.spots_left = self.capacity - self.current_count
         super.init()
+
+        if (self.capacity != nil && self.current_count != nil) {
+            self.spots_left = self.capacity! - self.current_count!
+        } else {
+            self.spots_left = nil
+        }
+        
     }
     
     func update(current_count : Int, percent_filled : Int, last_updated : NSDate) {
@@ -58,8 +64,9 @@ class ParkingLot : NSObject, MKAnnotation {
         if let percent = percent_filled {
             sub += String(percent) + "% Filled. "
         }
-        sub += String(self.spots_left) + " Spots Left."
-        
+        if let spots_left = self.spots_left{
+            sub += String(spots_left) + " Spots Left."
+        }
         if let last_updated = self.last_updated {
             sub += " (Updated " + last_updated.relativeTime + ")"
         }

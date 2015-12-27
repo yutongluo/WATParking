@@ -45,16 +45,23 @@ class ViewController: UIViewController {
                             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
                             let last_updated = dateFormatter.dateFromString(last_updated_string!)
                             
-                            // construct coordinate
-                            let coordinate = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
                             
-                            self.parkingLotDict[lot_name] = ParkingLot(lot_name: lot_name, capacity: capacity!, current_count: current_count!, percent_filled: percent_filled, coordinate: coordinate, last_updated: last_updated)
-                            
-                            dispatch_async(dispatch_get_main_queue(),{
-                                for key in self.parkingLotDict {
-                                    self.map.addAnnotation(key.1)
+                            // Only add if coordinates are known
+                            if let lat = latitude {
+                                if let long = longitude {
+                                    // construct coordinate
+                                    let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                                    
+                                    self.parkingLotDict[lot_name] = ParkingLot(lot_name: lot_name, capacity: capacity, current_count: current_count, percent_filled: percent_filled, coordinate: coordinate, last_updated: last_updated)
+                                    
+                                    dispatch_async(dispatch_get_main_queue(),{
+                                        for key in self.parkingLotDict {
+                                            self.map.addAnnotation(key.1)
+                                        }
+                                    })
+
                                 }
-                            })
+                            }
                             
                         }
                     }
