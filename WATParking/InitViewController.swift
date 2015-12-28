@@ -53,23 +53,12 @@ class InitViewController: UIViewController {
                     })
                 }
             } else {
-                var msg = "Something went wrong :("
-                if let errno = err?.code {
-                    switch errno {
-                    case 1:
-                        msg = "Could not get parking data :( Is your device connected to the internet?"
-                        break;
-                    case 2:
-                        msg = "Could not parse parking data :("
-                    default:
-                        break;
-                    }
-                }
-                let alert = UIAlertController(title: "Error", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Quit", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
+                let alert = Alerts.dataErrorAlert(err, action: UIAlertAction(title: "Quit", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
                     exit(0)
                 }))
-                self.presentViewController(alert, animated: true, completion: nil)
+                dispatch_async(dispatch_get_main_queue(),{
+                    self.presentViewController(alert, animated: true, completion: nil)
+                })
             }
         }
     }

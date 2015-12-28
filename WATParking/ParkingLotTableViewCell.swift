@@ -10,14 +10,18 @@ import Foundation
 import UIKit
 
 class ParkingLotTableViewCell : UITableViewCell{
-    @IBOutlet weak var lotNameLabel: UILabel!
     
+    // MARK: variables
+    @IBOutlet weak var lotNameLabel: UILabel!
     @IBOutlet var percentLabel: UILabel!
     @IBOutlet var spotsLeftLabel: UILabel!
     @IBOutlet var updatedLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // Customize border for lotName
+        lotNameLabel.layer.borderWidth = 1
+        lotNameLabel.layer.borderColor = UIColor.grayColor().CGColor
     }
 }

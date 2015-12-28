@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class ViewController: UIViewController {
 
     // MARK variables
     let regionRadius: CLLocationDistance = 1000
@@ -54,33 +54,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl.clipsToBounds = true;
         self.parkingLotTableView.addSubview(refreshControl)
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return parkingLotDict.count
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let parkingLot = parkingLotArr[indexPath.row]
-        let cell : ParkingLotTableViewCell = tableView.dequeueReusableCellWithIdentifier("parkingLotCell", forIndexPath: indexPath) as! ParkingLotTableViewCell
-        
-        // Set label texts
-        cell.percentLabel.text = String(parkingLot.percent_filled!) + "%"
-        cell.lotNameLabel.text = parkingLot.lot_name
-        cell.updatedLabel.text = parkingLot.last_updated?.relativeTime
-        cell.spotsLeftLabel.text = String(parkingLot.spots_left!)
-        
-        // Custom highlight color
-        let selectColorView = UIView()
-        selectColorView.backgroundColor = UIColor(colorLiteralRed: 193 / 255.0, green: 218 / 255.0, blue: 214 / 255.0, alpha: 1)
-        cell.selectedBackgroundView =  selectColorView;
-
-        return cell
-    }
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // Select annotation
-        let selectedParkingLot = parkingLotArr[indexPath.row]
-        map.selectAnnotation(selectedParkingLot, animated: true)
     }
     
     func centerMapOnLocation(location: CLLocationCoordinate2D) {
@@ -133,17 +106,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                         // add lot to array
                                         self.parkingLotArr.insertionIndexOf(self.parkingLotDict[lot_name]!, isOrderedBefore: {$0.last_updated!.compare($1.last_updated!) == .OrderedDescending})
                                         
-                                        // add lot to map
+                                        // UI Updates
                                         dispatch_async(dispatch_get_main_queue(),{
+                                            // add lot to map
                                             self.map.addAnnotation(self.parkingLotDict[lot_name]!)
+                                            
+                                            // Add rows to tableview
+                                            self.parkingLotTableView.beginUpdates()
+                                            self.parkingLotTableView.insertRowsAtIndexPaths([
+                                                NSIndexPath(forRow: self.parkingLotArr.count-1, inSection: 0)
+                                                ], withRowAnimation: .Automatic)
+                                            self.parkingLotTableView.endUpdates()
                                         })
-                                        
-                                        // Add rows to tableview
-                                        self.parkingLotTableView.beginUpdates()
-                                        self.parkingLotTableView.insertRowsAtIndexPaths([
-                                            NSIndexPath(forRow: self.parkingLotArr.count-1, inSection: 0)
-                                            ], withRowAnimation: .Automatic)
-                                        self.parkingLotTableView.endUpdates()
                                     }
                                 }
                             }
@@ -155,22 +129,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             } else {
                 // No parking data
                 self.refreshControl.endRefreshing()
+                
+                let alert = Alerts.dataErrorAlert(err, action: UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
 
-                var msg = "Something went wrong :("
-                if let errno = err?.code {
-                    switch errno {
-                    case 1:
-                        msg = "Could not get parking data :( Is your device connected to the internet?"
-                        break;
-                    case 2:
-                        msg = "Could not parse parking data :("
-                    default:
-                        break;
-                    }
-                }
-                let alert = UIAlertController(title: "Error", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
+                dispatch_async(dispatch_get_main_queue(),{
+                    self.presentViewController(alert, animated: true, completion: nil)
+                })
             }
         }
     }

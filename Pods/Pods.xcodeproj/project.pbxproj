@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		117C68AC42ECDF0ED6C1B212FE5AA5E3 /* Pods-WATParking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A9D5031F8479A86538A4B3E8D0A5E /* Pods-WATParking-dummy.m */; };
+		21B05C78DD3A4B116DA6CBC877E23DC9 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439FEC25B822A57C4307CDBD271FAE1E /* DataStructures.swift */; };
+		56036154F8FB099212B30B752CFAEBA0 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BAA1B8D8CF36C7E92BF002B5B2B29 /* NSDate+Extension.swift */; };
+		73BD01B6D3A37EC92BF00A4DBE75877C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		8B54AD64D6A47A315433740BB21700D2 /* Pods-WATParking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B626CBEDD3362D4DF438D8EE92B9A2 /* Pods-WATParking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946ED35FAA97907FBAFAC5BF45B1F8C0 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B0339EBB77EDE896DE2FFE2D9C961 /* DateInRegion.swift */; };
+		B4E2841059DE9D9205ECDEB543ED6BE5 /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F9ECAE1CA8EDA313241E62849CAFC2 /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C50E8326285738CFD444091BC02DBEF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		EA738CAB715A030015A2C6733328FB31 /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28335E29AD9C10AA06C0CD670F70975F /* SwiftDate-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A207D818E56E4ED1DA41C576333F3E7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56FB619ED7F90C2B768457BB6E8FF7F6;
+			remoteInfo = SwiftDate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		097B0339EBB77EDE896DE2FFE2D9C961 /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
+		114598C8218F74BB15700E755FFCDE90 /* Pods-WATParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WATParking.release.xcconfig"; sourceTree = "<group>"; };
+		1A4B014D55A0B3CA1F66E069B352CC4E /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
+		1AF7AD6E04F1FAE36D4E2D4155B24EB5 /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
+		1D8A9D5031F8479A86538A4B3E8D0A5E /* Pods-WATParking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WATParking-dummy.m"; sourceTree = "<group>"; };
+		28335E29AD9C10AA06C0CD670F70975F /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		439FEC25B822A57C4307CDBD271FAE1E /* DataStructures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStructures.swift; path = SwiftDate/DataStructures.swift; sourceTree = "<group>"; };
+		470051047CD2663793B13E1B7B2B7BDD /* Pods_WATParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WATParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD9FA8FDB364D1DF051A73D27A006AB /* Pods-WATParking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WATParking-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57154BC1F4169270ECC052B37A547B2C /* Pods-WATParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WATParking.debug.xcconfig"; sourceTree = "<group>"; };
+		5D515210E556B081A8EAF99B5CAFD895 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B626CBEDD3362D4DF438D8EE92B9A2 /* Pods-WATParking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WATParking-umbrella.h"; sourceTree = "<group>"; };
+		77B221244C5DCD779029BE3F9A14E91B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE738E6775201358533793A5D9EED4B /* Pods-WATParking-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WATParking-resources.sh"; sourceTree = "<group>"; };
+		7E7E90145A397960801BE7EE8B7D33E9 /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDate.modulemap; sourceTree = "<group>"; };
+		873BAA1B8D8CF36C7E92BF002B5B2B29 /* NSDate+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDate+Extension.swift"; path = "SwiftDate/NSDate+Extension.swift"; sourceTree = "<group>"; };
+		88F9ECAE1CA8EDA313241E62849CAFC2 /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
+		A551DB43F629E9BF29A35463439AD869 /* Pods-WATParking-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WATParking-frameworks.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F16AC50C34537EC2C1CD0FC318D75DA0 /* Pods-WATParking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WATParking-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3E1EF0DAB5F9ADA92825244D00FAFA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E04D33942181AA24C68C38EBD3AFFD /* Pods-WATParking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WATParking.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A3D67081FAAE91FAEB0BEB28CDE6F5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50E8326285738CFD444091BC02DBEF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7047C8DAB4F0A870F528D515290C2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BD01B6D3A37EC92BF00A4DBE75877C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54682A0995677740B1EF161E371E314F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77B221244C5DCD779029BE3F9A14E91B /* Info.plist */,
+				7E7E90145A397960801BE7EE8B7D33E9 /* SwiftDate.modulemap */,
+				1AF7AD6E04F1FAE36D4E2D4155B24EB5 /* SwiftDate.xcconfig */,
+				28335E29AD9C10AA06C0CD670F70975F /* SwiftDate-dummy.m */,
+				1A4B014D55A0B3CA1F66E069B352CC4E /* SwiftDate-prefix.pch */,
+				88F9ECAE1CA8EDA313241E62849CAFC2 /* SwiftDate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftDate";
+			sourceTree = "<group>";
+		};
+		60B21796FD4541CE7D177E531609B9E6 /* SwiftDate */ = {
+			isa = PBXGroup;
+			children = (
+				439FEC25B822A57C4307CDBD271FAE1E /* DataStructures.swift */,
+				097B0339EBB77EDE896DE2FFE2D9C961 /* DateInRegion.swift */,
+				873BAA1B8D8CF36C7E92BF002B5B2B29 /* NSDate+Extension.swift */,
+				54682A0995677740B1EF161E371E314F /* Support Files */,
+			);
+			path = SwiftDate;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				94941679AAAD37D81D0E050F6B9D116D /* Pods */,
+				819E8B5AB92A569C19676C3931E73436 /* Products */,
+				9856CCE2011229C90D0EBF9FB7C5C61E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		819E8B5AB92A569C19676C3931E73436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				470051047CD2663793B13E1B7B2B7BDD /* Pods_WATParking.framework */,
+				5D515210E556B081A8EAF99B5CAFD895 /* SwiftDate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94941679AAAD37D81D0E050F6B9D116D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60B21796FD4541CE7D177E531609B9E6 /* SwiftDate */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9856CCE2011229C90D0EBF9FB7C5C61E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF15A54480D05FBD71CB0F640FA24048 /* Pods-WATParking */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF15A54480D05FBD71CB0F640FA24048 /* Pods-WATParking */ = {
+			isa = PBXGroup;
+			children = (
+				F3E1EF0DAB5F9ADA92825244D00FAFA4 /* Info.plist */,
+				F5E04D33942181AA24C68C38EBD3AFFD /* Pods-WATParking.modulemap */,
+				4BD9FA8FDB364D1DF051A73D27A006AB /* Pods-WATParking-acknowledgements.markdown */,
+				F16AC50C34537EC2C1CD0FC318D75DA0 /* Pods-WATParking-acknowledgements.plist */,
+				1D8A9D5031F8479A86538A4B3E8D0A5E /* Pods-WATParking-dummy.m */,
+				A551DB43F629E9BF29A35463439AD869 /* Pods-WATParking-frameworks.sh */,
+				7BE738E6775201358533793A5D9EED4B /* Pods-WATParking-resources.sh */,
+				68B626CBEDD3362D4DF438D8EE92B9A2 /* Pods-WATParking-umbrella.h */,
+				57154BC1F4169270ECC052B37A547B2C /* Pods-WATParking.debug.xcconfig */,
+				114598C8218F74BB15700E755FFCDE90 /* Pods-WATParking.release.xcconfig */,
+			);
+			name = "Pods-WATParking";
+			path = "Target Support Files/Pods-WATParking";
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		89345EBF92F9C54268096F8B923F51A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B54AD64D6A47A315433740BB21700D2 /* Pods-WATParking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95407D9E1257BCC47D5AD085CFD6DDF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E2841059DE9D9205ECDEB543ED6BE5 /* SwiftDate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		56FB619ED7F90C2B768457BB6E8FF7F6 /* SwiftDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65064A8866C07B291D730309BA6E7FC /* Build configuration list for PBXNativeTarget "SwiftDate" */;
+			buildPhases = (
+				9CC1343F3A0F8DA045F1A2CCAC6585A8 /* Sources */,
+				3A3D67081FAAE91FAEB0BEB28CDE6F5A /* Frameworks */,
+				95407D9E1257BCC47D5AD085CFD6DDF2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDate;
+			productName = SwiftDate;
+			productReference = 5D515210E556B081A8EAF99B5CAFD895 /* SwiftDate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCA31220B7D26442C7EAD83A19A2031D /* Pods-WATParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AF184FDAF66C2ED6913724CDA17173 /* Build configuration list for PBXNativeTarget "Pods-WATParking" */;
+			buildPhases = (
+				24A8FC5095B1570E21723533A71E6096 /* Sources */,
+				F7047C8DAB4F0A870F528D515290C2AF /* Frameworks */,
+				89345EBF92F9C54268096F8B923F51A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0422743F5D6466F125BC9A436E0AEB73 /* PBXTargetDependency */,
+			);
+			name = "Pods-WATParking";
+			productName = "Pods-WATParking";
+			productReference = 470051047CD2663793B13E1B7B2B7BDD /* Pods_WATParking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 819E8B5AB92A569C19676C3931E73436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA31220B7D26442C7EAD83A19A2031D /* Pods-WATParking */,
+				56FB619ED7F90C2B768457BB6E8FF7F6 /* SwiftDate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24A8FC5095B1570E21723533A71E6096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117C68AC42ECDF0ED6C1B212FE5AA5E3 /* Pods-WATParking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC1343F3A0F8DA045F1A2CCAC6585A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B05C78DD3A4B116DA6CBC877E23DC9 /* DataStructures.swift in Sources */,
+				946ED35FAA97907FBAFAC5BF45B1F8C0 /* DateInRegion.swift in Sources */,
+				56036154F8FB099212B30B752CFAEBA0 /* NSDate+Extension.swift in Sources */,
+				EA738CAB715A030015A2C6733328FB31 /* SwiftDate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0422743F5D6466F125BC9A436E0AEB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = 56FB619ED7F90C2B768457BB6E8FF7F6 /* SwiftDate */;
+			targetProxy = A207D818E56E4ED1DA41C576333F3E7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CE29032D39B028A2238166B1842FA84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF7AD6E04F1FAE36D4E2D4155B24EB5 /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40492AE4A4D50EA48A82A00C44834B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114598C8218F74BB15700E755FFCDE90 /* Pods-WATParking.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WATParking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WATParking/Pods-WATParking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_WATParking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65468C9795B8FAA0EB57AD2DDA239AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57154BC1F4169270ECC052B37A547B2C /* Pods-WATParking.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WATParking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WATParking/Pods-WATParking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_WATParking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95FE82DCD9DE15F31A65CA3E4785F9D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF7AD6E04F1FAE36D4E2D4155B24EB5 /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AF184FDAF66C2ED6913724CDA17173 /* Build configuration list for PBXNativeTarget "Pods-WATParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65468C9795B8FAA0EB57AD2DDA239AD2 /* Debug */,
+				40492AE4A4D50EA48A82A00C44834B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65064A8866C07B291D730309BA6E7FC /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FE82DCD9DE15F31A65CA3E4785F9D3 /* Debug */,
+				2CE29032D39B028A2238166B1842FA84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

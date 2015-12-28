@@ -47,7 +47,6 @@ class DataManager {
                 let jsonData = try NSJSONSerialization.JSONObjectWithData(data!,options: .MutableContainers) as! NSDictionary
                 completion(data: jsonData, error: nil)
             } catch let err as NSError {
-                print(err)
                 completion(data: nil, error: err)
             }
         })

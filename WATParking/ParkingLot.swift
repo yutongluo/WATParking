@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 import Contacts
+import SwiftDate
 
 class ParkingLot : NSObject, MKAnnotation {
     let lot_name : String
@@ -70,7 +71,7 @@ class ParkingLot : NSObject, MKAnnotation {
             sub += String(spots_left) + " Spots Left."
         }
         if let last_updated = self.last_updated {
-            sub += " (Updated " + last_updated.relativeTime + ")"
+            sub += " (Updated " + last_updated.toRelativeString(fromDate: NSDate(), abbreviated: true, maxUnits: 1)! + " ago)"
         }
         return sub
     }
