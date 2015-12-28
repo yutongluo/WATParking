@@ -22,6 +22,7 @@
 		61D7B54E1C2DA2970091D71C /* WATParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7B54D1C2DA2970091D71C /* WATParkingUITests.swift */; };
 		61D7B55C1C2DA5950091D71C /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7B55B1C2DA5950091D71C /* ParkingLot.swift */; };
 		61F7DBC61C306B870098AC49 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F7DBC51C306B870098AC49 /* InitViewController.swift */; };
+		61F7DBCA1C30D0710098AC49 /* InsertSorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F7DBC91C30D0710098AC49 /* InsertSorted.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		61D7B54F1C2DA2970091D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61D7B55B1C2DA5950091D71C /* ParkingLot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
 		61F7DBC51C306B870098AC49 /* InitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		61F7DBC91C30D0710098AC49 /* InsertSorted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertSorted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				61D7B5361C2DA2970091D71C /* LaunchScreen.storyboard */,
 				61D7B5391C2DA2970091D71C /* Info.plist */,
 				61D7B55B1C2DA5950091D71C /* ParkingLot.swift */,
+				61F7DBC91C30D0710098AC49 /* InsertSorted.swift */,
 				61D5AB1D1C2F112900DC5015 /* VCMapView.swift */,
 				6123085C1C2F611E0066EE96 /* RelativeTime.swift */,
 				61B1727D1C2DB024002513AB /* keys.plist */,
@@ -285,6 +288,7 @@
 			files = (
 				61D7B55C1C2DA5950091D71C /* ParkingLot.swift in Sources */,
 				6111527D1C2F8AC800A67447 /* ParkingLotTableViewCell.swift in Sources */,
+				61F7DBCA1C30D0710098AC49 /* InsertSorted.swift in Sources */,
 				61B1727C1C2DADE6002513AB /* DataManager.swift in Sources */,
 				6123085D1C2F611E0066EE96 /* RelativeTime.swift in Sources */,
 				61F7DBC61C306B870098AC49 /* InitViewController.swift in Sources */,

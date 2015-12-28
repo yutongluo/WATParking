@@ -12,12 +12,19 @@ import Contacts
 
 class ParkingLot : NSObject, MKAnnotation {
     let lot_name : String
-    let capacity : Int?
+    var capacity : Int?
     var current_count : Int?
     var last_updated : NSDate?
     var percent_filled : Int?
-    var spots_left : Int?
     let coordinate: CLLocationCoordinate2D
+    
+    var spots_left : Int? {
+        if (self.capacity != nil && self.current_count != nil) {
+            return self.capacity! - self.current_count!
+        } else {
+            return nil
+        }
+    }
     
     init(lot_name : String, capacity : Int?, current_count : Int?, percent_filled : Int?, coordinate: CLLocationCoordinate2D, last_updated : NSDate?) {
         self.lot_name = lot_name
@@ -28,19 +35,15 @@ class ParkingLot : NSObject, MKAnnotation {
         self.last_updated = last_updated
         
         super.init()
-
-        if (self.capacity != nil && self.current_count != nil) {
-            self.spots_left = self.capacity! - self.current_count!
-        } else {
-            self.spots_left = nil
-        }
         
     }
     
-    func update(current_count : Int, percent_filled : Int, last_updated : NSDate) {
-        self.current_count = current_count
-        self.percent_filled = percent_filled
-        self.last_updated = last_updated
+    func update(current_count : Int?, percent_filled : Int?, last_updated : NSDate?) {
+        self.current_count = current_count ?? self.current_count
+        self.percent_filled = percent_filled ?? self.percent_filled
+        self.last_updated = last_updated ?? self.last_updated
+        
+        
     }
     
     // annotation callout info button opens this mapItem in Maps app
