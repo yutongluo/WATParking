@@ -78,6 +78,8 @@ class InitViewController: UIViewController {
         if segue.identifier == "doneInit" {
             if let destination = segue.destinationViewController as? ViewController {
                 destination.parkingLotDict = self.parkingLotDict
+                destination.parkingLotArr = Array(self.parkingLotDict.values)
+                destination.parkingLotArr = destination.parkingLotArr.sort({$0.last_updated!.compare($1.last_updated!) == .OrderedDescending})
             }
         }
     }

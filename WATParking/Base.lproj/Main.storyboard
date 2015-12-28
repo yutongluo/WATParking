@@ -40,10 +40,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nZK-A2-eTz">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="244"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="QB0-iN-SFo"/>
+                                </constraints>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ONZ-pF-G2b">
-                                <rect key="frame" x="0.0" y="240" width="600" height="360"/>
+                                <rect key="frame" x="0.0" y="299" width="600" height="301"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="parkingLotCell" rowHeight="90" id="Nui-Yz-8rE" customClass="ParkingLotTableViewCell" customModule="WATParking" customModuleProvider="target">
@@ -136,14 +139,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ONZ-pF-G2b" firstAttribute="leading" secondItem="nZK-A2-eTz" secondAttribute="leading" id="0IU-Pl-n3d"/>
-                            <constraint firstItem="ONZ-pF-G2b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="220" id="3XU-gV-GVt"/>
-                            <constraint firstItem="nZK-A2-eTz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BOp-11-8gc"/>
-                            <constraint firstAttribute="trailing" secondItem="nZK-A2-eTz" secondAttribute="trailing" id="Mnn-QM-JhB"/>
-                            <constraint firstItem="ONZ-pF-G2b" firstAttribute="trailing" secondItem="nZK-A2-eTz" secondAttribute="trailing" id="aIz-r6-fP0"/>
-                            <constraint firstItem="nZK-A2-eTz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dS9-sG-F6m"/>
-                            <constraint firstItem="ONZ-pF-G2b" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="dea-a9-NiG"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nZK-A2-eTz" secondAttribute="bottom" constant="356" id="sBa-WI-Rgn"/>
+                            <constraint firstItem="nZK-A2-eTz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C3J-ze-V5X"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ONZ-pF-G2b" secondAttribute="bottom" id="G0Q-h5-A3N"/>
+                            <constraint firstItem="nZK-A2-eTz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HG6-XX-s9c"/>
+                            <constraint firstItem="ONZ-pF-G2b" firstAttribute="trailing" secondItem="nZK-A2-eTz" secondAttribute="trailing" id="UtL-dr-66l"/>
+                            <constraint firstItem="ONZ-pF-G2b" firstAttribute="top" secondItem="nZK-A2-eTz" secondAttribute="bottom" constant="-1" id="WHz-tQ-DB1"/>
+                            <constraint firstAttribute="trailing" secondItem="nZK-A2-eTz" secondAttribute="trailing" id="gf5-AB-2kE"/>
+                            <constraint firstItem="ONZ-pF-G2b" firstAttribute="leading" secondItem="nZK-A2-eTz" secondAttribute="leading" id="jPV-mC-5sy"/>
                         </constraints>
                     </view>
                     <connections>
